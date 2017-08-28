@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/bootstrap-4.0.0-beta/favicon.ico">
 
-    <title>MOMO's Home</title>
+    <title>MOMO's Home page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
