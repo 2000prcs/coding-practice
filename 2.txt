@@ -1,0 +1,19 @@
+
+ <ul id="profile">
+<li>Age: 30</li>
+<li>Sex: female</li>
+<li>Hometown: Seoul, South Korea</li>
+<li>Lives in: San Francisco, CA, USA</li>
+<img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-1/p480x480/14725651_10209409776499221_4327695344044956698_n.jpg?oh=c9130c6638b1107437b59ee59179db6c&oe=5A298A45" alt="profile">
+</ul>
+
+<div id="disqus_thread">
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://momos-home.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+</div>

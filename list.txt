@@ -1,0 +1,4 @@
+<li><a href="http://localhost/phpjs/momo.php?id=1">Who is MOMO?</a></li>
+<li><a href="http://localhost/phpjs/momo.php?id=2">MOMO's Profile</a></li>
+<li><a href="http://localhost/phpjs/momo.php?id=3">What MOMO likes</a></li>
+<li><a href="http://localhost/phpjs/momo.php?id=4">MOMO's Social Life</a></li>

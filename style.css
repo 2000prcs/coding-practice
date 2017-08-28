@@ -1,0 +1,21 @@
+body.black{
+  background-color:black;
+  color:white;
+}
+body.white{
+  background-color:white;
+  color:black;
+}
+#control{
+  padding-left:40px;
+  margin-bottom:40px;
+}
+#disqus_thread{
+  padding-top:20px;
+}
+form{
+  width:600px;
+}
+html{
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
