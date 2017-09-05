@@ -1,0 +1,24 @@
+{
+  "name": "javascript-version-transpilation",
+  "version": "1.0.0",
+  "description": "JavaScript ES6+ to ES5 Transpilation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel es6 -d es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2000prcs/home.git"
+  },
+  "author": "mo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2000prcs/home/issues"
+  },
+  "homepage": "https://github.com/2000prcs/home#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
