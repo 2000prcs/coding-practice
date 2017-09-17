@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // script 태그를 head 태그 안에 위치시키면, 아직 정의되지 않은 요소가 있기에
+        // 에러가 생길 수 있음. body  태그 끝에 넣는 것이 좋음.
+        // window.onload 에 의해 웹브라우저가 모두 로드된 후에 이 함수가 호출됨
+        window.onload = function () {
+        let dark = document.getElementById('dark');
+        dark.addEventListener('click', function () {
+            document.body.className = 'dark';
+        });
+        };
+    </script>
+    <style>
+        #selected {
+            color: red;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .dark #selected {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="selected">JavaScript</li>
+    </ul>
+    <input type="button" value="dark" id="dark" />
+</body>
+</html>
