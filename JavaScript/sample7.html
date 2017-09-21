@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <input type="button" value="open" onclick="winopen();" />
+    <input type="text" onkeypress="winmessage(this.value)" />
+    <input type="button" value="close" onclick="winclose()" />
+    <script>
+    //아래 예제는 보안상의 이유로 실제 서버에서만 동작하고, 같은 도메인의 창에 대해서만 작동한다.        
+        function winopen() {
+            var win = window.open('sample3.html', 'ot', 'width=300px, height=500px');
+        }
+        function winmessage(msg) {
+            win.document.getElementById('message').innerText = msg;
+        }
+        function winclose() {
+            win.close();
+        }
+    </script>
+</body>
+</html>

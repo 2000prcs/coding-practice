@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <a id="anchor" href="http://opentutorials.org">opentutorials</a>
+    <ul>
+        <li>HTML</li>
+        <li id="list">CSS</li>
+        <li id="active">JavaScript</li>
+    </ul>
+    <input type="button" id="button" value="button">
+    <script>
+        let li = document.getElementById('active');
+        console.log(li.constructor.name); // HTMLLIElement
+        let lis1 = document.getElementsByTagName('li');
+        console.log(lis1.constructor.name); // HTMLCollection (유사배열)
+        let target1 = document.getElementById('list');
+        console.log(target1.constructor.name); // HTMLLIElement
+        let target2 = document.getElementById('anchor');
+        console.log(target2.constructor.name); // HTMLAnchorElement
+        let target3 = document.getElementById('button');
+        console.log(target3.constructor.name); // HTMLInputElement
+
+        console.group('before');
+        let lis2 = document.getElementsByTagName('li');
+        for(var i = 0; i < lis2.length; i++){
+            console.log(lis2[i]);
+        };
+        console.groupEnd();
+        console.group('after');
+        lis2[1].parentNode.removeChild(lis2[1]);
+        for(var i = 0; i < lis2.length; i++){
+            console.log(lis2[i]);
+        };
+        console.groupEnd();
+    </script>
+</body>
+
+</html>

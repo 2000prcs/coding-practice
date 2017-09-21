@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li class="active">Ruby</li>
+        <li class="active">Python</li>
+        <li id="old">PHP</li>    
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="active2">JavaScript</li>
+    </ol>
+    <script>
+        let ul = document.getElementsByTagName('ul')[0];
+        let lis = ul.getElementsByTagName('li');
+        for(let i=0; i<lis.length; i++){
+            lis[i].style.color='red';
+        };
+        let classname = document.getElementsByClassName('active');
+        for(let i=0; i<classname.length; i++){
+            classname[i].style.color='blue';
+        };
+        let old = document.getElementById('old');
+        old.style.color='orange';
+        let query = document.querySelectorAll('ol');
+        for(let name in query){
+            query[name].style.color='green';
+        };
+        let query2 = document.querySelector('.active2');
+        query2.style.color='yellow';
+    </script>
+</body>
+</html>

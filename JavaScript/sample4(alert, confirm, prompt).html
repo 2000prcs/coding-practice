@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="button" value="confirm" onclick="func_confirm()">
+    <input type="button" value="prompt" onclick="func_prompt()">
+    <script>
+        function func_confirm() {
+            if (confirm('ok?')) {
+                alert('ok!');
+            } else {
+                alert('cancel');
+            }
+        };
+
+        function func_prompt() {
+            if (prompt('ID?') === '2000prcs') {
+                alert('Confirmed')
+            } else {
+                alert('Failed')
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>

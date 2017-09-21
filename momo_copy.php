@@ -30,8 +30,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 py-4">
-						<h4 class="text-white">About</h4>
-						<p class="text-white">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+						<h4 class="text-white">About Mo</h4>
+						<p class="text-white">More you get to know about her, more you like her.</p>
 					</div>
 					<div class="col-sm-4 py-4">
 						<h4 class="text-white">Menu</h4>
@@ -68,8 +68,8 @@
 				 <div class="container">
 					 <div class="carousel-caption d-none d-md-block text-left">
 						 <h1>Who is MOMO?</h1>
-						 <p>Find out about MOMO. Where is she from? Where does she live? What does she like to do?</p>
-						 <p><a class="btn btn-lg btn-primary" href="#" role="button">Find out now</a></p>
+						 <br/>						 
+						 <p><a class="btn btn-lg btn-light" href="momo.php?id=1" role="button">Find out now</a></p>
 					 </div>
 				 </div>
 			 </div>
@@ -77,9 +77,9 @@
 				 <img class="second-slide" src="img/shutterstock_361685600.jpg" alt="Second slide">
 				 <div class="container">
 					 <div class="carousel-caption d-none d-md-block">
-						 <h1>MOMO's Projects</h1>
-						 <p>Recent MOMO's web application projects, game projects, and more.</p>
-						 <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+						 <h1>MOMO's Career</h1>			
+						 <br/>			 
+						 <p><a class="btn btn-lg btn-light" href="momo.php?id=2" role="button">Learn more</a></p>
 					 </div>
 				 </div>
 			 </div>
@@ -87,9 +87,9 @@
 				 <img class="third-slide" src="img/shutterstock_247962964.jpg" alt="Third slide">
 				 <div class="container">
 					 <div class="carousel-caption d-none d-md-block text-right">
-						 <h1>MOMO's Personal Life</h1>
-						 <p>MOMO enjoys her hobbies. Check out her reviews and albums.</p>
-						 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+						 <h1>MOMO's Personal Life</h1>		
+						 <br/>				 
+						 <p><a class="btn btn-lg btn-light" href="momo.php?id=3" role="button">Browse gallery</a></p>
 					 </div>
 				 </div>
 			 </div>
@@ -106,7 +106,9 @@
 
 	 			<div class="container marketing">
 					<article>
+						
 						<?php
+						
 							if(empty($_GET['id']) === false){
 								$sql='SELECT * FROM momo WHERE id='.$_GET['id'];
 								$result=mysqli_query($conn, $sql);
@@ -119,21 +121,22 @@
 								//echo '<p>'.htmlspecialchars($row['author']).'</p>';
 								//echo strip_tags($row['description'].'<a><h1><h2><h3><h4><h5><ul><ol><li>');
 							}
-
+							
 							if(empty($_GET['id']) === false){
 								echo file_get_contents($_GET['id'].".txt");
 							}
+							
 						?>
-
+						
 						<hr class="featurette-divider">
 
 						 <div class="row featurette">
 							 <div class="col-md-7">
-								 <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-								 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+								 <h2 class="featurette-heading">Adventurer - <span class="text-muted">Always seeking for new adventures.</span></h2>
+								 <p class="lead">“Life is either a daring adventure or nothing at all.” </p>
 							 </div>
 							 <div class="col-md-5">
-								 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+								 <img class="featurette-image img-fluid mx-auto" src ="img/kyoto.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 							 </div>
 						 </div>
 
@@ -141,11 +144,11 @@
 
 						 <div class="row featurette">
 							 <div class="col-md-7 order-md-2">
-								 <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-								 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+								 <h2 class="featurette-heading">Learner - <span class="text-muted">Always learning for myself.</span></h2>
+								 <p class="lead">“The more I read, the more I acquire, the more certain I am that I know nothing.”</p>
 							 </div>
 							 <div class="col-md-5 order-md-1">
-								 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+								 <img class="featurette-image img-fluid mx-auto" src ="img/piano.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 							 </div>
 						 </div>
 
@@ -153,11 +156,11 @@
 
 						 <div class="row featurette">
 							 <div class="col-md-7">
-								 <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-								 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+								 <h2 class="featurette-heading">Challenger - <span class="text-muted">Always challenging for a better life.</span></h2>
+								 <p class="lead">“I've got the key to my castle in the air, but whether I can unlock the door remains to be seen.”</p>
 							 </div>
 							 <div class="col-md-5">
-								 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+								 <img class="featurette-image img-fluid mx-auto" src ="img/dolphin.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
 							 </div>
 						 </div>
 

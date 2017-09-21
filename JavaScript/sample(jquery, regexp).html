@@ -20,6 +20,13 @@
         $('#execute_btn').click(function(){
             $('#list li').text('coding everybody');
         });
+
+        let urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
+            let content = '생활코딩 : http://opentutorials.org/course/1 입니다. 네이버 : http://naver.com 입니다. ';
+            let result = content.replace(urlPattern, function (url) {
+                return '<a href="' + url + '">' + url + '</a>';
+            });
+            console.log(result);
         
         let str = "Mo is Mo. Mo is not the other Mo. Just accept Mo as Mo";
         let pattern = /mo/ig;
